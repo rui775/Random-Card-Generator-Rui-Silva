@@ -1,1 +1,49 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+}
+.grid-container {
+  margin-top: 10px;
+  display: grid;
+  grid-gap: 3em;
+  justify-content: center;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 150px 150px 150px;
+  grid-gap: 5px;
+  background-color: white;
+  color: black;
+  font-size: 1.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 5%;
+}
+
+.cardvalue {
+  text-align: center;
+  align-self: center;
+  font-size: 5em;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.top-left {
+  text-align: center;
+  align-self: center;
+  font-size: 5em;
+  padding: 0.1em;
+}
+
+.bottom-right {
+  text-align: center;
+  align-self: center;
+  font-size: 5em;
+  transform: rotate(180deg);
+  padding: 0.1em;
+}
