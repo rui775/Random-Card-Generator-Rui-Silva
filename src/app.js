@@ -2,7 +2,7 @@
 import "bootstrap";
 import "./style.css";
 
-window.onload = function() {
+let cardFunc = function() {
   let suits = [
     '<i style="color: red">♥</i>',
     "<i>♠</i>",
@@ -19,3 +19,10 @@ window.onload = function() {
   let cardResult = cardValue[Math.floor(Math.random() * cardValue.length)];
   document.getElementById("valueCard").innerHTML = cardResult;
 };
+
+let cardTimeOut = () => {
+  setTimeout(cardFunc, 2000);
+};
+
+let newCard = document.getElementById("cardChange");
+newCard.addEventListener("click", cardTimeOut);

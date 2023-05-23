@@ -47,3 +47,10 @@ body {
   transform: rotate(180deg);
   padding: 0.1em;
 }
+.btn {
+  background-color: green;
+}
+.btn button {
+  padding: 10px;
+  border-radius: 25px;
+}
