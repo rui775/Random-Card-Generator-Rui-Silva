@@ -21,7 +21,7 @@ let cardFunc = function() {
 };
 
 let cardTimeOut = () => {
-  setTimeout(cardFunc, 2000);
+  setInterval(cardFunc, 5000);
 };
 
 let newCard = document.getElementById("cardChange");
